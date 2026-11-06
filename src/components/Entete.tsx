@@ -12,7 +12,10 @@ export function Entete({ langue, t }: { langue: Langue; t: Dictionnaire }) {
         <Link href={`/${langue}`} className="marque" aria-label={MARQUE}>
           {logo ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={logo} alt={MARQUE} className="logo" />
+            <>
+              <img src={logo} alt="" className="logo" />
+              <span className="nom-marque">{MARQUE}</span>
+            </>
           ) : (
             <span className="logo-texte">
               Eva <em>Business</em> <small>&amp; Hair</small>

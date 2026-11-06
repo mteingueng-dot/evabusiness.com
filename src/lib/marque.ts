@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 export const MARQUE = "Eva Business & Hair";
+export const COPYRIGHT = "Concept Informatique inc.";
 export const COURRIEL = "info@evabusiness.com";
 
 /** Logo : public/images/logo.png (sinon logo texte). */

@@ -43,9 +43,29 @@ export default async function PageProduit({
         <div className="fiche-texte">
           <p className="carte-categorie">{categorieParCode(produit.categorie)?.nom[lang]}</p>
           <h1>{nom}</h1>
-          <p className="prix prix-grand">{formaterPrix(produit.prix, lang)}</p>
+          {produit.prix === null ? (
+            <p className="prix-a-venir prix-grand">{t.prixAVenir}</p>
+          ) : (
+            <p className="prix prix-grand">{formaterPrix(produit.prix, lang)}</p>
+          )}
           <p>{produit.description[lang]}</p>
-          <BoutonAjouter slug={produit.slug} libelle={t.ajouter} libelleAjoute={t.ajoute} grand />
+          {produit.couleurs && produit.couleurs.length > 0 && (
+            <div className="couleurs">
+              <p className="couleurs-titre">{t.couleurs}</p>
+              <ul>
+                {produit.couleurs.map((c) => (
+                  <li key={c.code}>
+                    <strong>{c.code}</strong> {lang === "fr" ? c.description : c.description_en}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {produit.prix === null ? (
+            <p className="note">{t.bientot}</p>
+          ) : (
+            <BoutonAjouter slug={produit.slug} libelle={t.ajouter} libelleAjoute={t.ajoute} grand />
+          )}
         </div>
       </div>
     </section>

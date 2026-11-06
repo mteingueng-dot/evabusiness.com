@@ -31,3 +31,11 @@ Copier `.env.example` en `.env.local` et y mettre `STRIPE_SECRET_KEY` (clé `sk_
 
 1. Pousser le dépôt sur GitHub, l'importer dans Vercel, y saisir les variables d'environnement.
 2. Relier le domaine evabusiness.com (aujourd'hui affiché à vendre chez HugeDomains : vérifier d'abord qui en est propriétaire).
+
+## Designs
+
+Quatre designs au choix (variables CSS de `src/app/globals.css`, attribut `data-design` de `<html>`) : `rose` (Rose poudré & brun), `noir` (Noir & or, comme le logo), `ivoire` (Ivoire & or, épuré), `bordeaux` (Bordeaux & nude). Le sélecteur en bas à gauche (`src/components/ChoixDesign.tsx`) est provisoire : à retirer une fois le design choisi (fixer alors `data-design` dans `src/app/[lang]/layout.tsx`). Une adresse peut imposer un design : `/fr?design=noir`.
+
+## Rayon mèches (repris de marchemvogmbi.com)
+
+`src/data/meches.json` : les 66 articles du rayon « Mèches & accessoires » de marchemvogmbi.com (nom, description fr/en, couleurs, ID Clover), photos dans `public/images/produits/<ID>.jpg`. Le site du marché n'affiche pas de prix : ces articles sont « Prix à venir » (pas de bouton d'achat) tant que `prix` n'est pas renseigné. La plupart des photos viennent de sites de fournisseurs ou de revendeurs (champ `photo_source`) : à remplacer par vos propres photos avant la mise en ligne.

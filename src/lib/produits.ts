@@ -1,4 +1,5 @@
 import type { Langue } from "./i18n";
+import meches from "@/data/meches.json";
 
 /**
  * Catalogue de la boutique. Produits D'EXEMPLE : à remplacer par les vrais
@@ -20,12 +21,17 @@ export type Produit = {
   categorie: CodeCategorie;
   nom: Texte;
   description: Texte;
-  /** Prix en cents de dollars canadiens. */
-  prix: number;
+  /** Prix en cents de dollars canadiens ; null = prix à venir (pas encore en vente). */
+  prix: number | null;
   /** Chemin d'une photo dans public/ (ex. "/images/produits/huile.jpg"). Vide = image provisoire. */
   image?: string;
   vedette?: boolean;
+  couleurs?: Couleur[];
+  /** ID de l'article dans Clover (Marché Mvog-Mbi). */
+  idClover?: string;
 };
+
+export type Couleur = { code: string; description: string; description_en: string };
 
 export const CATEGORIES: Categorie[] = [
   {
@@ -54,7 +60,7 @@ export const CATEGORIES: Categorie[] = [
   },
 ];
 
-export const PRODUITS: Produit[] = [
+const EXEMPLES: Produit[] = [
   {
     slug: "huile-nourrissante-ricin",
     categorie: "cheveux",
@@ -64,7 +70,6 @@ export const PRODUITS: Produit[] = [
       en: "Pure castor oil to strengthen hair and support growth. 120 ml.",
     },
     prix: 1899,
-    vedette: true,
   },
   {
     slug: "shampoing-hydratant-karite",
@@ -95,7 +100,6 @@ export const PRODUITS: Produit[] = [
       en: "Buildable coverage, natural matte finish, 12 shades. 30 ml.",
     },
     prix: 2999,
-    vedette: true,
   },
   {
     slug: "rouge-a-levres-velours",
@@ -117,39 +121,24 @@ export const PRODUITS: Produit[] = [
     },
     prix: 3499,
   },
-  {
-    slug: "perruque-lace-front-lisse",
-    categorie: "perruques",
-    nom: { fr: "Perruque lace front lisse", en: "Straight lace front wig" },
-    description: {
-      fr: "Cheveux naturels, 18 pouces, dentelle frontale invisible.",
-      en: "Human hair, 18 inches, invisible lace front.",
-    },
-    prix: 18999,
-    vedette: true,
-  },
-  {
-    slug: "perruque-bouclee-courte",
-    categorie: "perruques",
-    nom: { fr: "Perruque bouclée courte", en: "Short curly wig" },
-    description: {
-      fr: "Coupe courte aux boucles naturelles, légère et respirante.",
-      en: "Short cut with natural curls, light and breathable.",
-    },
-    prix: 12999,
-  },
-  {
-    slug: "meches-tissage-ondule",
-    categorie: "perruques",
-    nom: { fr: "Mèches tissage ondulé", en: "Body wave weave bundle" },
-    description: {
-      fr: "Lot de 3 mèches ondulées, cheveux naturels, 16 pouces.",
-      en: "Bundle of 3 body wave wefts, human hair, 16 inches.",
-    },
-    prix: 14999,
-    vedette: true,
-  },
 ];
+
+/** Rayon « Mèches & accessoires » repris de marchemvogmbi.com (src/data/meches.json). */
+const VEDETTES = ["french-curl-braid-afro-22-3x-1b", "meche-afro-long-butterfly-locs", "meche-x-pression-pres-stretched-3x-1b-52", "perruque-curly-wave"];
+
+const MECHES: Produit[] = meches.map((m) => ({
+  slug: m.slug,
+  categorie: "perruques",
+  nom: { fr: m.nom, en: m.nom },
+  description: m.description,
+  prix: null,
+  image: m.image || undefined,
+  couleurs: m.couleurs,
+  idClover: m.id_clover,
+  vedette: VEDETTES.includes(m.slug),
+}));
+
+export const PRODUITS: Produit[] = [...EXEMPLES, ...MECHES];
 
 export function produitParSlug(slug: string): Produit | undefined {
   return PRODUITS.find((p) => p.slug === slug);

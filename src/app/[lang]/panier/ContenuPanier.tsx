@@ -15,8 +15,8 @@ export function ContenuPanier({ langue, t }: { langue: Langue; t: Dictionnaire }
 
   const details = lignes
     .map((l) => ({ ...l, produit: produitParSlug(l.slug) }))
-    .filter((l) => l.produit);
-  const sousTotal = details.reduce((s, l) => s + l.produit!.prix * l.quantite, 0);
+    .filter((l) => l.produit && l.produit.prix !== null);
+  const sousTotal = details.reduce((s, l) => s + l.produit!.prix! * l.quantite, 0);
   const totaux = calculerTotaux(sousTotal);
   const prix = (c: number) => formaterPrix(c, langue);
 
@@ -58,7 +58,7 @@ export function ContenuPanier({ langue, t }: { langue: Langue; t: Dictionnaire }
                 </div>
                 <div className="panier-info">
                   <Link href={`/${langue}/produit/${slug}`}>{produit!.nom[langue]}</Link>
-                  <span>{prix(produit!.prix)}</span>
+                  <span>{prix(produit!.prix!)}</span>
                 </div>
                 <label className="quantite">
                   <span className="sr">{t.panier.quantite}</span>
@@ -66,7 +66,7 @@ export function ContenuPanier({ langue, t }: { langue: Langue; t: Dictionnaire }
                   <span>{quantite}</span>
                   <button type="button" onClick={() => changer(slug, quantite + 1)}>+</button>
                 </label>
-                <strong>{prix(produit!.prix * quantite)}</strong>
+                <strong>{prix(produit!.prix! * quantite)}</strong>
                 <button type="button" className="lien-retirer" onClick={() => retirer(slug)}>
                   {t.panier.retirer}
                 </button>

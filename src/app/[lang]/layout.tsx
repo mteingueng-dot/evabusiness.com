@@ -1,14 +1,22 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Playfair_Display, Inter, Cormorant_Garamond, Montserrat } from "next/font/google";
 import { LANGUES, dictionnaire, estLangue } from "@/lib/i18n";
-import { MARQUE, COURRIEL } from "@/lib/marque";
+import { MARQUE, COURRIEL, COPYRIGHT } from "@/lib/marque";
 import { PanierFournisseur } from "@/components/PanierContexte";
+import { ChoixDesign, SCRIPT_DESIGN } from "@/components/ChoixDesign";
 import { Entete } from "@/components/Entete";
 import "../globals.css";
 
-const titres = Playfair_Display({ subsets: ["latin"], variable: "--police-titres" });
-const texte = Inter({ subsets: ["latin"], variable: "--police-texte" });
+const playfair = Playfair_Display({ subsets: ["latin"], variable: "--police-playfair" });
+const inter = Inter({ subsets: ["latin"], variable: "--police-inter" });
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  variable: "--police-cormorant",
+});
+const montserrat = Montserrat({ subsets: ["latin"], variable: "--police-montserrat" });
+const polices = [playfair, inter, cormorant, montserrat].map((p) => p.variable).join(" ");
 
 export function generateStaticParams() {
   return LANGUES.map((lang) => ({ lang }));
@@ -39,7 +47,10 @@ export default async function Gabarit({
   if (!estLangue(lang)) notFound();
   const t = dictionnaire(lang);
   return (
-    <html lang={lang} className={`${titres.variable} ${texte.variable}`}>
+    <html lang={lang} className={polices} data-design="rose" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: SCRIPT_DESIGN }} />
+      </head>
       <body>
         <PanierFournisseur>
           <div className="filet" aria-hidden="true" />
@@ -54,11 +65,12 @@ export default async function Gabarit({
               <div>
                 <a href={`mailto:${COURRIEL}`}>{COURRIEL}</a>
                 <p>
-                  © {new Date().getFullYear()} {MARQUE}. {t.pied.droits}
+                  © {new Date().getFullYear()} {COPYRIGHT} {t.pied.droits}
                 </p>
               </div>
             </div>
           </footer>
+          <ChoixDesign />
         </PanierFournisseur>
       </body>
     </html>

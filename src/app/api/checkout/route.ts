@@ -30,7 +30,7 @@ export async function POST(requete: Request) {
       produit: l.slug ? produitParSlug(l.slug) : undefined,
       quantite: Math.floor(Number(l.quantite)),
     }))
-    .filter((l) => l.produit && l.quantite >= 1 && l.quantite <= 99);
+    .filter((l) => l.produit && l.produit.prix !== null && l.quantite >= 1 && l.quantite <= 99);
   if (lignes.length === 0) {
     return NextResponse.json({ erreur: "panier vide." }, { status: 400 });
   }
@@ -38,7 +38,7 @@ export async function POST(requete: Request) {
   const taux = [process.env.STRIPE_TAUX_TPS, process.env.STRIPE_TAUX_TVQ].filter(
     (x): x is string => Boolean(x),
   );
-  const sousTotal = lignes.reduce((s, l) => s + l.produit!.prix * l.quantite, 0);
+  const sousTotal = lignes.reduce((s, l) => s + l.produit!.prix! * l.quantite, 0);
   const livraison = sousTotal >= SEUIL_LIVRAISON_GRATUITE ? 0 : FRAIS_LIVRAISON;
   const site = process.env.NEXT_PUBLIC_SITE_URL ?? new URL(requete.url).origin;
 
@@ -52,7 +52,7 @@ export async function POST(requete: Request) {
         quantity: l.quantite,
         price_data: {
           currency: "cad",
-          unit_amount: l.produit!.prix,
+          unit_amount: l.produit!.prix!,
           product_data: { name: l.produit!.nom[langue] },
         },
         ...(taux.length ? { tax_rates: taux } : {}),

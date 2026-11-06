@@ -21,6 +21,9 @@ const fr = {
   tous: "Tous les produits",
   ajouter: "Ajouter au panier",
   ajoute: "Ajouté ✓",
+  prixAVenir: "Prix à venir",
+  bientot: "Bientôt en vente en ligne. Écrivez-nous pour le commander dès maintenant.",
+  couleurs: "Couleurs offertes",
   retourBoutique: "← Retour à la boutique",
   panier: {
     titre: "Votre panier",
@@ -71,6 +74,9 @@ const en: Dictionnaire = {
   tous: "All products",
   ajouter: "Add to cart",
   ajoute: "Added ✓",
+  prixAVenir: "Price coming soon",
+  bientot: "Coming soon online. Write to us to order it now.",
+  couleurs: "Available colours",
   retourBoutique: "← Back to the shop",
   panier: {
     titre: "Your cart",

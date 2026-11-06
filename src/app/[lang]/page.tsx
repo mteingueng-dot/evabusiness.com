@@ -3,23 +3,31 @@ import { dictionnaire, estLangue } from "@/lib/i18n";
 import { CATEGORIES, PRODUITS } from "@/lib/produits";
 import { CarteProduit } from "@/components/CarteProduit";
 import { notFound } from "next/navigation";
+import { cheminLogo } from "@/lib/marque";
 
 export default async function Accueil({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
   if (!estLangue(lang)) notFound();
   const t = dictionnaire(lang);
   const vedettes = PRODUITS.filter((p) => p.vedette);
+  const logo = cheminLogo();
 
   return (
     <>
       <section className="hero">
-        <div className="conteneur hero-contenu">
+        <div className="conteneur hero-grille">
+          <div className="hero-contenu">
           <p className="surtitre">{t.accroche}</p>
           <h1>{t.hero.titre}</h1>
           <p className="hero-texte">{t.hero.texte}</p>
           <Link href={`/${lang}/boutique`} className="bouton bouton-grand">
             {t.hero.bouton}
           </Link>
+          </div>
+          {logo && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={logo} alt="" className="hero-logo" />
+          )}
         </div>
       </section>
 

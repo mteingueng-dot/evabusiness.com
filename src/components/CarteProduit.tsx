@@ -24,8 +24,14 @@ export function CarteProduit({
         <h3>{nom}</h3>
       </Link>
       <div className="carte-bas">
-        <span className="prix">{formaterPrix(produit.prix, langue)}</span>
-        <BoutonAjouter slug={produit.slug} libelle={t.ajouter} libelleAjoute={t.ajoute} />
+        {produit.prix === null ? (
+          <span className="prix-a-venir">{t.prixAVenir}</span>
+        ) : (
+          <>
+            <span className="prix">{formaterPrix(produit.prix, langue)}</span>
+            <BoutonAjouter slug={produit.slug} libelle={t.ajouter} libelleAjoute={t.ajoute} />
+          </>
+        )}
       </div>
     </article>
   );
