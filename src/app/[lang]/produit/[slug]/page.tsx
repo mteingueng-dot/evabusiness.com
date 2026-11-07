@@ -66,6 +66,18 @@ export default async function PageProduit({
           ) : (
             <BoutonAjouter slug={produit.slug} libelle={t.ajouter} libelleAjoute={t.ajoute} grand />
           )}
+          <ul className="infos-achat">
+            {t.infosAchat.map(([slugInfo, texte]) => (
+              <li key={texte}>
+                <Link href={`/${lang}/${slugInfo}`}>{texte}</Link>
+              </li>
+            ))}
+            {produit.categorie === "perruques" && (
+              <li>
+                <Link href={`/${lang}/entretien`}>{t.guideEntretien}</Link>
+              </li>
+            )}
+          </ul>
         </div>
       </div>
     </section>

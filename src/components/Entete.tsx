@@ -25,6 +25,12 @@ export function Entete({ langue, t }: { langue: Langue; t: Dictionnaire }) {
         <nav className="menu">
           <Link href={`/${langue}`}>{t.nav.accueil}</Link>
           <Link href={`/${langue}/boutique`}>{t.nav.boutique}</Link>
+          <Link href={`/${langue}/guide-achat`} className="menu-large">
+            {t.nav.conseils}
+          </Link>
+          <Link href={`/${langue}/contact`} className="menu-large">
+            {t.nav.contact}
+          </Link>
           <Link href={`/${autre}`} className="langue" hrefLang={autre}>
             {autre.toUpperCase()}
           </Link>

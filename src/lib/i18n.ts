@@ -7,7 +7,30 @@ export function estLangue(valeur: string): valeur is Langue {
 }
 
 const fr = {
-  nav: { accueil: "Accueil", boutique: "Boutique", panier: "Panier" },
+  nav: {
+    accueil: "Accueil",
+    boutique: "Boutique",
+    panier: "Panier",
+    conseils: "Conseils",
+    contact: "Nous joindre",
+  },
+  filAriane: "Fil d'Ariane",
+  aussi: "Voir aussi",
+  aide: {
+    titre: "Besoin d'aide ?",
+    texte: "Écrivez-nous : nous vous conseillons sur le choix, la quantité et l'entretien.",
+    bouton: "Nous écrire",
+  },
+  infosAchat: [
+    ["livraison-retours", "Livraison gratuite au Canada dès 75 $"],
+    ["livraison-retours", "Retours sous 14 jours (article neuf, non ouvert)"],
+    ["guide-achat", "Guide : choisir sa perruque, ses mèches et sa couleur"],
+  ],
+  guideEntretien: "Guide d'entretien des perruques et mèches",
+  conseilsAccueil: {
+    titre: "Conseils de pro",
+    texte: "Type de perruque, nombre de paquets, codes de couleur, entretien : nos guides vous aident à bien choisir.",
+  },
   accroche: "Beauté, cheveux et perruques",
   annonce: "Livraison gratuite au Canada dès 75 $ · Paiement sécurisé",
   hero: {
@@ -61,7 +84,30 @@ const fr = {
 export type Dictionnaire = typeof fr;
 
 const en: Dictionnaire = {
-  nav: { accueil: "Home", boutique: "Shop", panier: "Cart" },
+  nav: {
+    accueil: "Home",
+    boutique: "Shop",
+    panier: "Cart",
+    conseils: "Advice",
+    contact: "Contact",
+  },
+  filAriane: "Breadcrumb",
+  aussi: "See also",
+  aide: {
+    titre: "Need help?",
+    texte: "Write to us: we advise you on choice, quantity and care.",
+    bouton: "Write to us",
+  },
+  infosAchat: [
+    ["livraison-retours", "Free shipping in Canada from $75"],
+    ["livraison-retours", "Returns within 14 days (new, unopened item)"],
+    ["guide-achat", "Guide: choosing your wig, braiding hair and colour"],
+  ],
+  guideEntretien: "Wig and braid care guide",
+  conseilsAccueil: {
+    titre: "Expert advice",
+    texte: "Wig type, number of packs, colour codes, care: our guides help you choose well.",
+  },
   accroche: "Beauty, hair care and wigs",
   annonce: "Free shipping in Canada from $75 · Secure payment",
   hero: {

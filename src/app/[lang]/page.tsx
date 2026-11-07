@@ -2,6 +2,7 @@ import Link from "next/link";
 import { dictionnaire, estLangue } from "@/lib/i18n";
 import { CATEGORIES, PRODUITS } from "@/lib/produits";
 import { CarteProduit } from "@/components/CarteProduit";
+import { rubriqueParSlug } from "@/lib/rubriques";
 import { notFound } from "next/navigation";
 
 const PHOTOS_ACCUEIL = [
@@ -77,6 +78,26 @@ export default async function Accueil({ params }: { params: Promise<{ lang: stri
           {vedettes.map((p) => (
             <CarteProduit key={p.slug} produit={p} langue={lang} t={t} />
           ))}
+        </div>
+      </section>
+
+      <section className="conteneur section">
+        <div className="conseils-accueil">
+          <div>
+            <h2>{t.conseilsAccueil.titre}</h2>
+            <p>{t.conseilsAccueil.texte}</p>
+          </div>
+          <div className="conseils-liens">
+            {["guide-achat", "entretien", "faq"].map((slug) => {
+              const r = rubriqueParSlug(slug)!;
+              return (
+                <Link key={slug} href={`/${lang}/${slug}`} className="conseil-tuile">
+                  <strong>{r.titre[lang]}</strong>
+                  <span>{r.intro[lang]}</span>
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </section>
     </>
