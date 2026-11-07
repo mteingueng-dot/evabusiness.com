@@ -3,7 +3,6 @@ import { dictionnaire, estLangue } from "@/lib/i18n";
 import { CATEGORIES, PRODUITS } from "@/lib/produits";
 import { CarteProduit } from "@/components/CarteProduit";
 import { notFound } from "next/navigation";
-import { cheminLogo } from "@/lib/marque";
 
 const PHOTOS_ACCUEIL = [
   "meche-afro-long-butterfly-locs",
@@ -16,7 +15,6 @@ export default async function Accueil({ params }: { params: Promise<{ lang: stri
   if (!estLangue(lang)) notFound();
   const t = dictionnaire(lang);
   const vedettes = PRODUITS.filter((p) => p.vedette);
-  const logo = cheminLogo();
   const photos = PHOTOS_ACCUEIL.map((slug) => PRODUITS.find((p) => p.slug === slug)).filter(
     (p): p is (typeof PRODUITS)[number] => Boolean(p?.image),
   );
@@ -39,10 +37,6 @@ export default async function Accueil({ params }: { params: Promise<{ lang: stri
               <img key={p.slug} src={p.image} alt="" />
             ))}
           </div>
-          {logo && (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={logo} alt="" className="hero-logo" />
-          )}
         </div>
       </section>
 

@@ -1,22 +1,15 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Playfair_Display, Inter, Cormorant_Garamond, Montserrat } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import { LANGUES, dictionnaire, estLangue } from "@/lib/i18n";
 import { MARQUE, COURRIEL, COPYRIGHT } from "@/lib/marque";
 import { PanierFournisseur } from "@/components/PanierContexte";
-import { ChoixDesign, SCRIPT_DESIGN } from "@/components/ChoixDesign";
 import { Entete } from "@/components/Entete";
 import "../globals.css";
 
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--police-playfair" });
 const inter = Inter({ subsets: ["latin"], variable: "--police-inter" });
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  variable: "--police-cormorant",
-});
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--police-montserrat" });
-const polices = [playfair, inter, cormorant, montserrat].map((p) => p.variable).join(" ");
+const polices = [inter, montserrat].map((p) => p.variable).join(" ");
 
 export function generateStaticParams() {
   return LANGUES.map((lang) => ({ lang }));
@@ -47,14 +40,10 @@ export default async function Gabarit({
   if (!estLangue(lang)) notFound();
   const t = dictionnaire(lang);
   return (
-    <html lang={lang} className={polices} data-design="clair" suppressHydrationWarning>
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: SCRIPT_DESIGN }} />
-      </head>
+    <html lang={lang} className={polices}>
       <body>
         <PanierFournisseur>
           <p className="annonce">{t.annonce}</p>
-          <div className="filet" aria-hidden="true" />
           <Entete langue={lang} t={t} />
           <main>{children}</main>
           <footer className="pied">
@@ -71,7 +60,6 @@ export default async function Gabarit({
               </div>
             </div>
           </footer>
-          <ChoixDesign />
         </PanierFournisseur>
       </body>
     </html>
