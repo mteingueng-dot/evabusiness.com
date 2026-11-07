@@ -47,12 +47,13 @@ export default async function Gabarit({
   if (!estLangue(lang)) notFound();
   const t = dictionnaire(lang);
   return (
-    <html lang={lang} className={polices} data-design="rose" suppressHydrationWarning>
+    <html lang={lang} className={polices} data-design="clair" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: SCRIPT_DESIGN }} />
       </head>
       <body>
         <PanierFournisseur>
+          <p className="annonce">{t.annonce}</p>
           <div className="filet" aria-hidden="true" />
           <Entete langue={lang} t={t} />
           <main>{children}</main>

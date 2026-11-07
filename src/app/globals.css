@@ -3,7 +3,6 @@
  * rose = Rose poudré & brun ; noir = Noir & or (comme le logo) ;
  * ivoire = Ivoire & or, épuré ; bordeaux = Bordeaux & nude.
  */
-:root,
 [data-design="rose"] {
   --fond: #fdf8f6;
   --surface: #ffffff;
@@ -149,6 +148,43 @@
   --corps: var(--police-inter), system-ui, sans-serif;
   --casse-titres: none;
   --espacement-titres: 0;
+}
+
+:root,
+[data-design="clair"] {
+  --fond: #ffffff;
+  --surface: #ffffff;
+  --texte: #1c1c1c;
+  --texte-doux: #6e6e6e;
+  --titre: #111111;
+  --accent: #a87b25;
+  --bordure: #ececec;
+  --bouton: #111111;
+  --bouton-survol: #a87b25;
+  --bouton-texte: #ffffff;
+  --entete-fond: rgba(255, 255, 255, 0.97);
+  --hero: #f8f5f0;
+  --hero-doux: #5c5c5c;
+  --bande-fond: #ffffff;
+  --bande-titre: #111111;
+  --bande-texte: #6e6e6e;
+  --pied-fond: #f8f5f0;
+  --pied-texte: #5c5c5c;
+  --pied-accent: #a87b25;
+  --pastille: #a87b25;
+  --filet: transparent;
+  --tuile-1: #f8f5f0;
+  --tuile-2: #f6f1f0;
+  --tuile-3: #f3efe9;
+  --img-1: linear-gradient(160deg, #f5f2ee, #e3d9cc);
+  --img-2: linear-gradient(160deg, #f6f0ee, #e2cfc9);
+  --img-3: linear-gradient(160deg, #f3efe9, #d9cbb8);
+  --rayon: 10px;
+  --rayon-bouton: 6px;
+  --titres: var(--police-montserrat), system-ui, sans-serif;
+  --corps: var(--police-inter), system-ui, sans-serif;
+  --casse-titres: none;
+  --espacement-titres: -0.01em;
 }
 
 * { box-sizing: border-box; }
@@ -338,6 +374,7 @@ a { color: inherit; }
 .choix-design i { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
 
 @media (max-width: 820px) {
+  .hero-photos { max-width: 420px; }
   .hero-grille { grid-template-columns: 1fr; }
   .hero-logo { width: 200px; }
   .nom-marque { display: none; }
@@ -350,3 +387,31 @@ a { color: inherit; }
   .lien-panier > span:not(.pastille) { display: none; }
   .logo { height: 52px; }
 }
+
+/* Bandeau d'annonce (tous les designs) */
+.annonce { background: var(--bouton); color: var(--bouton-texte); text-align: center; font-size: 0.8rem; padding: 7px 16px; letter-spacing: 0.02em; }
+[data-design="noir"] .annonce { background: #000; color: var(--titre); }
+
+/* Photos de l'accueil (design Clair) */
+.hero-photos { display: none; grid-template-columns: 1fr 1fr; gap: 12px; }
+.hero-photos img { width: 100%; aspect-ratio: 1; object-fit: contain; background: #fff; border-radius: var(--rayon); display: block; padding: 10px; }
+.hero-photos img:first-child { grid-row: span 2; aspect-ratio: auto; height: 100%; object-fit: cover; padding: 0; }
+
+/* Design Clair : allure boutique en ligne */
+[data-design="clair"] .hero { padding-block: clamp(40px, 6vw, 72px); }
+[data-design="clair"] .hero-photos { display: grid; }
+[data-design="clair"] h1 { font-weight: 700; }
+[data-design="clair"] h2, [data-design="clair"] h3 { font-weight: 600; }
+[data-design="clair"] h3 { font-size: 0.98rem; }
+[data-design="clair"] .avantages { border-bottom: 1px solid var(--bordure); }
+[data-design="clair"] .tuile-categorie { border: 0; min-height: 150px; }
+[data-design="clair"] .carte { border: 0; padding: 0; background: transparent; }
+[data-design="clair"] .carte:hover { box-shadow: none; }
+[data-design="clair"] .carte .image-produit { background: #f6f6f4; padding: 14px; object-fit: contain; transition: transform 0.3s; }
+[data-design="clair"] .carte:hover .image-produit { transform: scale(1.02); }
+[data-design="clair"] .carte-bas { flex-direction: column; align-items: stretch; }
+[data-design="clair"] .carte-bas .bouton { width: 100%; text-align: center; }
+[data-design="clair"] .prix { font-size: 1.05rem; }
+[data-design="clair"] .fiche .image-produit { background: #f6f6f4; object-fit: contain; padding: 24px; }
+[data-design="clair"] .pied { border-top: 1px solid var(--bordure); }
+[data-design="clair"] .grille-produits { gap: 28px 22px; }

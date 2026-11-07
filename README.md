@@ -34,7 +34,7 @@ Copier `.env.example` en `.env.local` et y mettre `STRIPE_SECRET_KEY` (clé `sk_
 
 ## Designs
 
-Quatre designs au choix (variables CSS de `src/app/globals.css`, attribut `data-design` de `<html>`) : `rose` (Rose poudré & brun), `noir` (Noir & or, comme le logo), `ivoire` (Ivoire & or, épuré), `bordeaux` (Bordeaux & nude). Le sélecteur en bas à gauche (`src/components/ChoixDesign.tsx`) est provisoire : à retirer une fois le design choisi (fixer alors `data-design` dans `src/app/[lang]/layout.tsx`). Une adresse peut imposer un design : `/fr?design=noir`.
+Cinq designs au choix (variables CSS de `src/app/globals.css`, attribut `data-design` de `<html>`) : `clair` (par défaut : blanc, allure boutique en ligne, bandeau d'annonce, photos des produits à l'accueil), `rose` (Rose poudré & brun), `noir` (Noir & or, comme le logo), `ivoire` (Ivoire & or, épuré), `bordeaux` (Bordeaux & nude). Le sélecteur en bas à gauche (`src/components/ChoixDesign.tsx`) est provisoire : à retirer une fois le design choisi (fixer alors `data-design` dans `src/app/[lang]/layout.tsx`). Une adresse peut imposer un design : `/fr?design=noir`.
 
 ## Rayon mèches (repris de marchemvogmbi.com)
 

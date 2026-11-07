@@ -9,6 +9,7 @@ export function estLangue(valeur: string): valeur is Langue {
 const fr = {
   nav: { accueil: "Accueil", boutique: "Boutique", panier: "Panier" },
   accroche: "Beauté, cheveux et perruques",
+  annonce: "Livraison gratuite au Canada dès 75 $ · Paiement sécurisé",
   hero: {
     titre: "Révélez votre beauté naturelle",
     texte:
@@ -62,6 +63,7 @@ export type Dictionnaire = typeof fr;
 const en: Dictionnaire = {
   nav: { accueil: "Home", boutique: "Shop", panier: "Cart" },
   accroche: "Beauty, hair care and wigs",
+  annonce: "Free shipping in Canada from $75 · Secure payment",
   hero: {
     titre: "Reveal your natural beauty",
     texte:

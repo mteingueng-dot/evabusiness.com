@@ -5,12 +5,21 @@ import { CarteProduit } from "@/components/CarteProduit";
 import { notFound } from "next/navigation";
 import { cheminLogo } from "@/lib/marque";
 
+const PHOTOS_ACCUEIL = [
+  "meche-afro-long-butterfly-locs",
+  "french-curl-braid-afro-22-3x-1b",
+  "perruque-curly-wave",
+];
+
 export default async function Accueil({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
   if (!estLangue(lang)) notFound();
   const t = dictionnaire(lang);
   const vedettes = PRODUITS.filter((p) => p.vedette);
   const logo = cheminLogo();
+  const photos = PHOTOS_ACCUEIL.map((slug) => PRODUITS.find((p) => p.slug === slug)).filter(
+    (p): p is (typeof PRODUITS)[number] => Boolean(p?.image),
+  );
 
   return (
     <>
@@ -23,6 +32,12 @@ export default async function Accueil({ params }: { params: Promise<{ lang: stri
           <Link href={`/${lang}/boutique`} className="bouton bouton-grand">
             {t.hero.bouton}
           </Link>
+          </div>
+          <div className="hero-photos" aria-hidden="true">
+            {photos.map((p) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img key={p.slug} src={p.image} alt="" />
+            ))}
           </div>
           {logo && (
             // eslint-disable-next-line @next/next/no-img-element
