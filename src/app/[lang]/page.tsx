@@ -54,7 +54,7 @@ export default async function Accueil({ params }: { params: Promise<{ lang: stri
 
       <section className="conteneur section">
         <h2>{t.categories}</h2>
-        <div className="grille-3">
+        <div className="grille-3 grille-categories">
           {CATEGORIES.map((c) => (
             <Link
               key={c.code}

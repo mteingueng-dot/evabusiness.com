@@ -1,12 +1,13 @@
 import type { Langue } from "./i18n";
 import meches from "@/data/meches.json";
+import nouveautes from "@/data/nouveautes.json";
 
 /**
  * Catalogue de la boutique. Produits D'EXEMPLE : à remplacer par les vrais
  * produits (nom, description, prix en cents, photo dans public/images/produits/).
  */
 
-export type CodeCategorie = "cheveux" | "maquillage" | "perruques";
+export type CodeCategorie = "cheveux" | "corps" | "maquillage" | "perruques";
 
 export type Texte = Record<Langue, string>;
 
@@ -43,6 +44,14 @@ export const CATEGORIES: Categorie[] = [
     },
   },
   {
+    code: "corps",
+    nom: { fr: "Soins du corps", en: "Body care" },
+    description: {
+      fr: "Beurre de karité, savon noir et soins naturels pour la peau.",
+      en: "Shea butter, black soap and natural skin care.",
+    },
+  },
+  {
     code: "maquillage",
     nom: { fr: "Maquillage", en: "Makeup" },
     description: {
@@ -62,16 +71,6 @@ export const CATEGORIES: Categorie[] = [
 
 const EXEMPLES: Produit[] = [
   {
-    slug: "huile-nourrissante-ricin",
-    categorie: "cheveux",
-    nom: { fr: "Huile nourrissante au ricin", en: "Nourishing castor oil" },
-    description: {
-      fr: "Huile de ricin pure pour fortifier les cheveux et favoriser la pousse. 120 ml.",
-      en: "Pure castor oil to strengthen hair and support growth. 120 ml.",
-    },
-    prix: 1899,
-  },
-  {
     slug: "shampoing-hydratant-karite",
     categorie: "cheveux",
     nom: { fr: "Shampoing hydratant au karité", en: "Shea moisturizing shampoo" },
@@ -90,16 +89,6 @@ const EXEMPLES: Produit[] = [
       en: "Deep mask with avocado and honey for damaged hair. 250 ml.",
     },
     prix: 2299,
-  },
-  {
-    slug: "fond-de-teint-mat",
-    categorie: "maquillage",
-    nom: { fr: "Fond de teint mat longue tenue", en: "Long-wear matte foundation" },
-    description: {
-      fr: "Couvrance modulable, fini mat naturel, 12 teintes. 30 ml.",
-      en: "Buildable coverage, natural matte finish, 12 shades. 30 ml.",
-    },
-    prix: 2999,
   },
   {
     slug: "rouge-a-levres-velours",
@@ -138,7 +127,24 @@ const MECHES: Produit[] = meches.map((m) => ({
   vedette: VEDETTES.includes(m.slug),
 }));
 
-export const PRODUITS: Produit[] = [...EXEMPLES, ...MECHES];
+/**
+ * Nouveaux produits choisis dans le relevé Alibaba du 2026-11-07 (src/data/nouveautes.json) :
+ * un produit par type. ref_achat = code de la ligne du classeur d'achat (usage interne, jamais
+ * affiché). Prix à venir tant que le prix de vente n'est pas fixé.
+ */
+const VEDETTES_NOUVEAUTES = ["perruque-lace-front-body-wave-cheveux-humains", "beurre-de-karite-pur-non-raffine"];
+
+const NOUVEAUTES: Produit[] = nouveautes.map((n) => ({
+  slug: n.slug,
+  categorie: n.categorie as CodeCategorie,
+  nom: n.nom,
+  description: n.description,
+  prix: null,
+  image: `/images/produits/${n.slug}.jpg`,
+  vedette: VEDETTES_NOUVEAUTES.includes(n.slug),
+}));
+
+export const PRODUITS: Produit[] = [...NOUVEAUTES, ...EXEMPLES, ...MECHES];
 
 export function produitParSlug(slug: string): Produit | undefined {
   return PRODUITS.find((p) => p.slug === slug);

@@ -1,6 +1,6 @@
 # Eva Business & Hair — evabusiness.com
 
-Boutique en ligne de produits de beauté : soins des cheveux, maquillage, perruques et mèches.
+Boutique en ligne de produits de beauté : soins des cheveux, soins du corps, maquillage, perruques et mèches.
 
 - **Langues :** français et anglais.
 - **Prix :** dollars canadiens, taxes du Québec (TPS 5 %, TVQ 9,975 %).
@@ -50,7 +50,7 @@ Toutes les pages existent en français (`/fr/…`) et en anglais (`/en/…`) ; l
 | Adresse | Page |
 | --- | --- |
 | `/fr` | Accueil : bandeau, avantages, catégories, coups de cœur, conseils de pro |
-| `/fr/boutique` | Tous les produits ; `?categorie=cheveux`, `maquillage` ou `perruques` pour filtrer |
+| `/fr/boutique` | Tous les produits ; `?categorie=cheveux`, `corps`, `maquillage` ou `perruques` pour filtrer |
 | `/fr/produit/<slug>` | Fiche produit : photo, prix, couleurs offertes, ajout au panier, informations d'achat |
 | `/fr/panier` | Panier, calcul des taxes et de la livraison, bouton de paiement |
 | `/fr/merci` | Confirmation après le paiement (vide le panier) |
@@ -136,14 +136,20 @@ Les produits sont dans `src/lib/produits.ts`. Pour chaque produit :
 | Champ | Contenu |
 | --- | --- |
 | `slug` | Identifiant de l'adresse, unique, sans accents |
-| `categorie` | `cheveux`, `maquillage` ou `perruques` |
+| `categorie` | `cheveux`, `corps`, `maquillage` ou `perruques` |
 | `nom`, `description` | Textes `{ fr, en }` |
 | `prix` | En **cents** (`2499` = 24,99 $). Mettre `null` pour « Prix à venir » : pas de bouton d'achat, et le paiement le refuse |
 | `image` | Chemin de la photo (`/images/produits/…`) ; sinon une image provisoire de la couleur de la catégorie |
 | `couleurs` | Liste `{ code, description, description_en }` affichée sur la fiche |
 | `vedette` | `true` pour l'afficher dans « Nos coups de cœur » de l'accueil |
 
-- **Produits d'exemple :** les 6 produits de `EXEMPLES` (soins et maquillage) sont à remplacer par les vrais.
+- **Nouveautés (relevé Alibaba du 2026-11-07) :** `src/data/nouveautes.json`, 12 produits, un par type d'article du classeur d'achat (karité, savon noir, huile de ricin noire, gel edge control, huile au chébé, fond de teint, mèches pré-étirées, crochet, jumbo braid, perruque lace front, perruque bandeau, tissage).
+  - Noms et descriptions rédigés pour la boutique : aucun nom de fournisseur ni lien Alibaba sur le site.
+  - `ref_achat` = code de la ligne du classeur (B1-5, M4-3…), pour retrouver l'offre ; jamais affiché.
+  - Prix « à venir » : les prix du classeur sont des prix d'ACHAT en gros ; le prix de vente reste à fixer.
+  - Photos : celles des fournisseurs, réduites à 1 000 px, sans métadonnées (`public/images/produits/<slug>.jpg`) ; à remplacer par vos propres photos avant l'ouverture.
+  - Cosmétiques (karité, savon, huiles, gel, fond de teint) : pour les vendre au Canada, étiquetage bilingue et déclaration de cosmétique à Santé Canada ; demander la liste des ingrédients (INCI) au fournisseur.
+- **Produits d'exemple :** les 4 produits de `EXEMPLES` (soins et maquillage) sont à remplacer par les vrais. L'huile de ricin et le fond de teint d'exemple ont été retirés : remplacés par les nouveautés.
 - **Rayon mèches :** `src/data/meches.json` contient les 66 articles du rayon « Mèches & accessoires » de marchemvogmbi.com : nom, description fr/en, couleurs, ID Clover.
   - Les photos sont dans `public/images/produits/<ID>.jpg`.
   - Le site du marché n'affiche pas de prix : ces articles sont « Prix à venir » tant que `prix` n'est pas renseigné.
@@ -198,7 +204,8 @@ Un seul design, appelé « Clair » :
 ## 11. À faire avant l'ouverture
 
 - [ ] Remplacer les produits d'exemple par le vrai catalogue (soins, maquillage).
-- [ ] Renseigner les prix des 66 mèches.
+- [ ] Renseigner les prix des 66 mèches et des 12 nouveautés.
+- [ ] Cosmétiques importés : étiquetage bilingue, déclaration à Santé Canada, liste INCI.
 - [ ] Remplacer les photos de fournisseurs par vos propres photos.
 - [ ] Faire valider les textes des rubriques (section 3) et ajouter les coordonnées de l'entreprise.
 - [ ] Clés Stripe et taux de taxe ; essai d'achat complet en mode test.

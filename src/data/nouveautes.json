@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "beurre-de-karite-pur-non-raffine",
+    "categorie": "corps",
+    "ref_achat": "B1-5",
+    "nom": { "fr": "Beurre de karité pur non raffiné", "en": "Pure unrefined shea butter" },
+    "description": {
+      "fr": "Beurre de karité brut, 100 % naturel et non raffiné. Nourrit la peau sèche, adoucit les cheveux et protège les pointes. S'utilise seul ou dans vos mélanges maison.",
+      "en": "Raw, 100% natural unrefined shea butter. Nourishes dry skin, softens hair and protects the ends. Use on its own or in your homemade blends."
+    }
+  },
+  {
+    "slug": "savon-noir-africain-argan-rose",
+    "categorie": "corps",
+    "ref_achat": "B2-4",
+    "nom": { "fr": "Savon noir africain à l'argan et à la rose", "en": "African black soap with argan and rose" },
+    "description": {
+      "fr": "Savon noir purifiant et exfoliant, enrichi d'huile d'argan, d'huile d'olive et de rose. Pour le visage et le corps. Pot de 200 g.",
+      "en": "Purifying, exfoliating black soap enriched with argan oil, olive oil and rose. For face and body. 200 g jar."
+    }
+  },
+  {
+    "slug": "huile-de-ricin-noire-jamaicaine",
+    "categorie": "cheveux",
+    "ref_achat": "B3-2",
+    "nom": { "fr": "Huile de ricin noire jamaïcaine", "en": "Jamaican black castor oil" },
+    "description": {
+      "fr": "Huile de ricin noire pressée à froid, pour fortifier les cheveux, les sourcils et les cils et nourrir le cuir chevelu. Flacon compte-gouttes.",
+      "en": "Cold-pressed black castor oil to strengthen hair, brows and lashes and nourish the scalp. Dropper bottle."
+    }
+  },
+  {
+    "slug": "gel-coiffant-edge-control-tresses",
+    "categorie": "cheveux",
+    "ref_achat": "B4-1",
+    "nom": { "fr": "Gel coiffant tenue forte pour tresses et contours", "en": "Strong-hold braid and edge control gel" },
+    "description": {
+      "fr": "Gel à tenue extra forte pour lisser les contours (edges) et finir les tresses, nattes collées, locs et twists. Sans résidu blanc, se rince à l'eau.",
+      "en": "Extra-strong hold gel to slick edges and finish braids, cornrows, locs and twists. No white residue, rinses out with water."
+    }
+  },
+  {
+    "slug": "huile-de-pousse-chebe",
+    "categorie": "cheveux",
+    "ref_achat": "B5-3",
+    "nom": { "fr": "Huile de pousse au chébé", "en": "Chebe hair growth oil" },
+    "description": {
+      "fr": "Huile capillaire au chébé et aux huiles naturelles, pour nourrir le cuir chevelu et limiter la casse. Quelques gouttes à masser sur les racines.",
+      "en": "Hair oil with chebe and natural oils to nourish the scalp and reduce breakage. Massage a few drops into the roots."
+    }
+  },
+  {
+    "slug": "fond-de-teint-liquide-couvrance-totale",
+    "categorie": "maquillage",
+    "ref_achat": "B6-3",
+    "nom": { "fr": "Fond de teint liquide couvrance totale", "en": "Full-coverage liquid foundation" },
+    "description": {
+      "fr": "Fond de teint liquide à couvrance totale, fini mat et résistant à l'eau, en 16 teintes, dont de nombreuses teintes pour peaux mates et foncées.",
+      "en": "Full-coverage liquid foundation with a water-resistant matte finish, in 16 shades, including many for medium and deep skin tones."
+    }
+  },
+  {
+    "slug": "meches-pre-etirees-ez-braid",
+    "categorie": "perruques",
+    "ref_achat": "M1-1",
+    "nom": { "fr": "Mèches à tresser pré-étirées EZ Braid", "en": "EZ Braid pre-stretched braiding hair" },
+    "description": {
+      "fr": "Mèches synthétiques pré-étirées, texture yaki naturelle, pointes effilées : idéales pour box braids et tresses sans nœuds. Fixation à l'eau chaude.",
+      "en": "Pre-stretched synthetic braiding hair with a natural yaki texture and feathered ends: ideal for box braids and knotless braids. Hot-water set."
+    }
+  },
+  {
+    "slug": "meches-crochet-spring-passion-twist",
+    "categorie": "perruques",
+    "ref_achat": "M2-1",
+    "nom": { "fr": "Mèches crochet Spring / Passion Twist 16 po", "en": "Spring / Passion Twist crochet hair 16 in" },
+    "description": {
+      "fr": "Mèches pré-bouclées pour twists sénégalais, passion twists et soft locs, posées au crochet. 16 pouces, environ 105 g par paquet.",
+      "en": "Pre-curled hair for Senegalese twists, passion twists and soft locs, installed with a crochet hook. 16 inches, about 105 g per pack."
+    }
+  },
+  {
+    "slug": "meches-jumbo-braid-kanekalon",
+    "categorie": "perruques",
+    "ref_achat": "M3-4",
+    "nom": { "fr": "Mèches jumbo braid Kanekalon 24 po", "en": "Kanekalon jumbo braid 24 in" },
+    "description": {
+      "fr": "Grande mèche Kanekalon douce et réaliste, pré-étirée, pour tresses africaines. 24 pouces pliée (48 pouces dépliée).",
+      "en": "Soft, realistic pre-stretched Kanekalon jumbo braid for African braids. 24 inches folded (48 inches unfolded)."
+    }
+  },
+  {
+    "slug": "perruque-lace-front-body-wave-cheveux-humains",
+    "categorie": "perruques",
+    "ref_achat": "M4-3",
+    "nom": { "fr": "Perruque lace front Body Wave en cheveux humains", "en": "Human hair Body Wave lace front wig" },
+    "description": {
+      "fr": "Perruque en cheveux humains, ondulation Body Wave, dentelle HD transparente pour une ligne de cheveux naturelle. Se lisse, se boucle et se colore.",
+      "en": "Human hair wig with a Body Wave pattern and transparent HD lace for a natural hairline. Can be straightened, curled and coloured."
+    }
+  },
+  {
+    "slug": "perruque-bandeau-bouclee-sans-colle",
+    "categorie": "perruques",
+    "ref_achat": "M5-2",
+    "nom": { "fr": "Perruque bandeau bouclée sans colle", "en": "Glueless curly headband wig" },
+    "description": {
+      "fr": "Perruque synthétique bouclée et volumineuse (densité 200 %), avec bandeau : se pose en une minute, sans colle ni dentelle.",
+      "en": "Full, curly synthetic wig (200% density) with a headband: on in a minute, no glue or lace."
+    }
+  },
+  {
+    "slug": "tissage-cheveux-humains-lisses",
+    "categorie": "perruques",
+    "ref_achat": "M6-3",
+    "nom": { "fr": "Tissage en cheveux humains lisses", "en": "Straight human hair bundle" },
+    "description": {
+      "fr": "Mèche de tissage en cheveux humains vierges, lisses, cuticules alignées pour limiter les nœuds. Vendue à la pièce ; plusieurs longueurs.",
+      "en": "Straight virgin human hair weave bundle with aligned cuticles to reduce tangling. Sold per bundle; several lengths."
+    }
+  }
+]
