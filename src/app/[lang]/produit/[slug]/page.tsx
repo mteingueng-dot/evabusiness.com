@@ -6,6 +6,7 @@ import { PRODUITS, categorieParCode, produitParSlug } from "@/lib/produits";
 import { formaterPrix } from "@/lib/prix";
 import { ImageProduit } from "@/components/ImageProduit";
 import { BoutonAjouter } from "@/components/BoutonAjouter";
+import { MARQUE } from "@/lib/marque";
 
 export function generateStaticParams() {
   return LANGUES.flatMap((lang) => PRODUITS.map((p) => ({ lang, slug: p.slug })));
@@ -19,7 +20,47 @@ export async function generateMetadata({
   const { lang, slug } = await params;
   const produit = produitParSlug(slug);
   if (!estLangue(lang) || !produit) return {};
-  return { title: produit.nom[lang], description: produit.description[lang] };
+  return {
+    title: produit.nom[lang],
+    description: produit.description[lang],
+    alternates: { languages: { fr: `/fr/produit/${slug}`, en: `/en/produit/${slug}` } },
+    openGraph: {
+      type: "website",
+      siteName: MARQUE,
+      locale: lang === "fr" ? "fr_CA" : "en_CA",
+      title: produit.nom[lang],
+      description: produit.description[lang],
+      url: `/${lang}/produit/${slug}`,
+      images: produit.image ? [{ url: produit.image }] : undefined,
+    },
+  };
+}
+
+const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://evabusiness.com";
+
+/** Données structurées schema.org (Google) ; l'offre n'apparaît que si le prix est connu. */
+function donneesStructurees(produit: NonNullable<ReturnType<typeof produitParSlug>>, lang: "fr" | "en") {
+  const url = `${SITE}/${lang}/produit/${produit.slug}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: produit.nom[lang],
+    description: produit.description[lang],
+    url,
+    ...(produit.image ? { image: `${SITE}${produit.image}` } : {}),
+    brand: { "@type": "Brand", name: MARQUE },
+    ...(produit.prix !== null
+      ? {
+          offers: {
+            "@type": "Offer",
+            url,
+            priceCurrency: "CAD",
+            price: (produit.prix / 100).toFixed(2),
+            availability: "https://schema.org/InStock",
+          },
+        }
+      : {}),
+  };
 }
 
 export default async function PageProduit({
@@ -35,6 +76,10 @@ export default async function PageProduit({
 
   return (
     <section className="conteneur section">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(donneesStructurees(produit, lang)).replace(/</g, "\\u003c") }}
+      />
       <Link href={`/${lang}/boutique`} className="retour">
         {t.retourBoutique}
       </Link>

@@ -78,7 +78,7 @@ const EXEMPLES: Produit[] = [
       fr: "Nettoie en douceur sans dessécher les cheveux bouclés et crépus. 350 ml.",
       en: "Gently cleanses without drying curly and coily hair. 350 ml.",
     },
-    prix: 1499,
+    prix: null,
   },
   {
     slug: "masque-reparateur",
@@ -88,7 +88,7 @@ const EXEMPLES: Produit[] = [
       fr: "Masque profond à l'avocat et au miel pour cheveux abîmés. 250 ml.",
       en: "Deep mask with avocado and honey for damaged hair. 250 ml.",
     },
-    prix: 2299,
+    prix: null,
   },
   {
     slug: "rouge-a-levres-velours",
@@ -98,7 +98,7 @@ const EXEMPLES: Produit[] = [
       fr: "Couleur intense et confortable, fini velours.",
       en: "Intense, comfortable colour with a velvet finish.",
     },
-    prix: 1699,
+    prix: null,
   },
   {
     slug: "palette-yeux-terre",
@@ -108,7 +108,7 @@ const EXEMPLES: Produit[] = [
       fr: "12 fards mats et irisés aux tons chauds.",
       en: "12 matte and shimmer shadows in warm tones.",
     },
-    prix: 3499,
+    prix: null,
   },
 ];
 

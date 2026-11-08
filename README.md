@@ -106,7 +106,7 @@ Rubriques adaptées à une boutique de beauté, de perruques et de mèches. Tous
 src/
   app/
     [lang]/              pages par langue (fr, en)
-      layout.tsx         en-tête, bandeau d'annonce, pied de page, polices
+      layout.tsx         en-tête, pied de page, polices (plus de bandeau d'annonce, retiré à la demande de la propriétaire)
       page.tsx           accueil
       boutique/          liste des produits
       produit/[slug]/    fiche produit
@@ -143,7 +143,7 @@ Les produits sont dans `src/lib/produits.ts`. Pour chaque produit :
 | `couleurs` | Liste `{ code, description, description_en }` affichée sur la fiche |
 | `vedette` | `true` pour l'afficher dans « Nos coups de cœur » de l'accueil |
 
-- **Nouveautés (relevé Alibaba du 2026-11-07) :** `src/data/nouveautes.json`, 12 produits, un par type d'article du classeur d'achat (karité, savon noir, huile de ricin noire, gel edge control, huile au chébé, fond de teint, mèches pré-étirées, crochet, jumbo braid, perruque lace front, perruque bandeau, tissage).
+- **Nouveautés (relevés Alibaba du 2026-11-07, classeur enrichi) :** `src/data/nouveautes.json`, 46 produits, un par type d'article du classeur d'achat (12 types de beauté B1-B12, 34 types de mèches, extensions, perruques et accessoires M1-M34). Aucun nom de fournisseur ni de marque dans les textes ; photos retenues sans logo de fournisseur ni avant/après ; produits « blanchissants » écartés. Le défrisant (B9) est un produit chimique : mise en garde dans sa description.
   - Noms et descriptions rédigés pour la boutique : aucun nom de fournisseur ni lien Alibaba sur le site.
   - `ref_achat` = code de la ligne du classeur (B1-5, M4-3…), pour retrouver l'offre ; jamais affiché.
   - Prix « à venir » : les prix du classeur sont des prix d'ACHAT en gros ; le prix de vente reste à fixer.
@@ -204,7 +204,7 @@ Un seul design, appelé « Clair » :
 ## 11. À faire avant l'ouverture
 
 - [ ] Remplacer les produits d'exemple par le vrai catalogue (soins, maquillage).
-- [ ] Renseigner les prix des 66 mèches et des 12 nouveautés.
+- [ ] Renseigner les prix : TOUS les produits sont « Prix à venir » (choix de la propriétaire du 2026-11-07), y compris les anciens exemples.
 - [ ] Cosmétiques importés : étiquetage bilingue, déclaration à Santé Canada, liste INCI.
 - [ ] Remplacer les photos de fournisseurs par vos propres photos.
 - [ ] Faire valider les textes des rubriques (section 3) et ajouter les coordonnées de l'entreprise.

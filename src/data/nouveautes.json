@@ -3,7 +3,10 @@
     "slug": "beurre-de-karite-pur-non-raffine",
     "categorie": "corps",
     "ref_achat": "B1-5",
-    "nom": { "fr": "Beurre de karité pur non raffiné", "en": "Pure unrefined shea butter" },
+    "nom": {
+      "fr": "Beurre de karité pur non raffiné",
+      "en": "Pure unrefined shea butter"
+    },
     "description": {
       "fr": "Beurre de karité brut, 100 % naturel et non raffiné. Nourrit la peau sèche, adoucit les cheveux et protège les pointes. S'utilise seul ou dans vos mélanges maison.",
       "en": "Raw, 100% natural unrefined shea butter. Nourishes dry skin, softens hair and protects the ends. Use on its own or in your homemade blends."
@@ -13,7 +16,10 @@
     "slug": "savon-noir-africain-argan-rose",
     "categorie": "corps",
     "ref_achat": "B2-4",
-    "nom": { "fr": "Savon noir africain à l'argan et à la rose", "en": "African black soap with argan and rose" },
+    "nom": {
+      "fr": "Savon noir africain à l'argan et à la rose",
+      "en": "African black soap with argan and rose"
+    },
     "description": {
       "fr": "Savon noir purifiant et exfoliant, enrichi d'huile d'argan, d'huile d'olive et de rose. Pour le visage et le corps. Pot de 200 g.",
       "en": "Purifying, exfoliating black soap enriched with argan oil, olive oil and rose. For face and body. 200 g jar."
@@ -23,7 +29,10 @@
     "slug": "huile-de-ricin-noire-jamaicaine",
     "categorie": "cheveux",
     "ref_achat": "B3-2",
-    "nom": { "fr": "Huile de ricin noire jamaïcaine", "en": "Jamaican black castor oil" },
+    "nom": {
+      "fr": "Huile de ricin noire jamaïcaine",
+      "en": "Jamaican black castor oil"
+    },
     "description": {
       "fr": "Huile de ricin noire pressée à froid, pour fortifier les cheveux, les sourcils et les cils et nourrir le cuir chevelu. Flacon compte-gouttes.",
       "en": "Cold-pressed black castor oil to strengthen hair, brows and lashes and nourish the scalp. Dropper bottle."
@@ -33,7 +42,10 @@
     "slug": "gel-coiffant-edge-control-tresses",
     "categorie": "cheveux",
     "ref_achat": "B4-1",
-    "nom": { "fr": "Gel coiffant tenue forte pour tresses et contours", "en": "Strong-hold braid and edge control gel" },
+    "nom": {
+      "fr": "Gel coiffant tenue forte pour tresses et contours",
+      "en": "Strong-hold braid and edge control gel"
+    },
     "description": {
       "fr": "Gel à tenue extra forte pour lisser les contours (edges) et finir les tresses, nattes collées, locs et twists. Sans résidu blanc, se rince à l'eau.",
       "en": "Extra-strong hold gel to slick edges and finish braids, cornrows, locs and twists. No white residue, rinses out with water."
@@ -43,7 +55,10 @@
     "slug": "huile-de-pousse-chebe",
     "categorie": "cheveux",
     "ref_achat": "B5-3",
-    "nom": { "fr": "Huile de pousse au chébé", "en": "Chebe hair growth oil" },
+    "nom": {
+      "fr": "Huile de pousse au chébé",
+      "en": "Chebe hair growth oil"
+    },
     "description": {
       "fr": "Huile capillaire au chébé et aux huiles naturelles, pour nourrir le cuir chevelu et limiter la casse. Quelques gouttes à masser sur les racines.",
       "en": "Hair oil with chebe and natural oils to nourish the scalp and reduce breakage. Massage a few drops into the roots."
@@ -53,7 +68,10 @@
     "slug": "fond-de-teint-liquide-couvrance-totale",
     "categorie": "maquillage",
     "ref_achat": "B6-3",
-    "nom": { "fr": "Fond de teint liquide couvrance totale", "en": "Full-coverage liquid foundation" },
+    "nom": {
+      "fr": "Fond de teint liquide couvrance totale",
+      "en": "Full-coverage liquid foundation"
+    },
     "description": {
       "fr": "Fond de teint liquide à couvrance totale, fini mat et résistant à l'eau, en 16 teintes, dont de nombreuses teintes pour peaux mates et foncées.",
       "en": "Full-coverage liquid foundation with a water-resistant matte finish, in 16 shades, including many for medium and deep skin tones."
@@ -63,7 +81,10 @@
     "slug": "meches-pre-etirees-ez-braid",
     "categorie": "perruques",
     "ref_achat": "M1-1",
-    "nom": { "fr": "Mèches à tresser pré-étirées EZ Braid", "en": "EZ Braid pre-stretched braiding hair" },
+    "nom": {
+      "fr": "Mèches à tresser pré-étirées EZ Braid",
+      "en": "EZ Braid pre-stretched braiding hair"
+    },
     "description": {
       "fr": "Mèches synthétiques pré-étirées, texture yaki naturelle, pointes effilées : idéales pour box braids et tresses sans nœuds. Fixation à l'eau chaude.",
       "en": "Pre-stretched synthetic braiding hair with a natural yaki texture and feathered ends: ideal for box braids and knotless braids. Hot-water set."
@@ -73,7 +94,10 @@
     "slug": "meches-crochet-spring-passion-twist",
     "categorie": "perruques",
     "ref_achat": "M2-1",
-    "nom": { "fr": "Mèches crochet Spring / Passion Twist 16 po", "en": "Spring / Passion Twist crochet hair 16 in" },
+    "nom": {
+      "fr": "Mèches crochet Spring / Passion Twist 16 po",
+      "en": "Spring / Passion Twist crochet hair 16 in"
+    },
     "description": {
       "fr": "Mèches pré-bouclées pour twists sénégalais, passion twists et soft locs, posées au crochet. 16 pouces, environ 105 g par paquet.",
       "en": "Pre-curled hair for Senegalese twists, passion twists and soft locs, installed with a crochet hook. 16 inches, about 105 g per pack."
@@ -83,7 +107,10 @@
     "slug": "meches-jumbo-braid-kanekalon",
     "categorie": "perruques",
     "ref_achat": "M3-4",
-    "nom": { "fr": "Mèches jumbo braid Kanekalon 24 po", "en": "Kanekalon jumbo braid 24 in" },
+    "nom": {
+      "fr": "Mèches jumbo braid Kanekalon 24 po",
+      "en": "Kanekalon jumbo braid 24 in"
+    },
     "description": {
       "fr": "Grande mèche Kanekalon douce et réaliste, pré-étirée, pour tresses africaines. 24 pouces pliée (48 pouces dépliée).",
       "en": "Soft, realistic pre-stretched Kanekalon jumbo braid for African braids. 24 inches folded (48 inches unfolded)."
@@ -93,7 +120,10 @@
     "slug": "perruque-lace-front-body-wave-cheveux-humains",
     "categorie": "perruques",
     "ref_achat": "M4-3",
-    "nom": { "fr": "Perruque lace front Body Wave en cheveux humains", "en": "Human hair Body Wave lace front wig" },
+    "nom": {
+      "fr": "Perruque lace front Body Wave en cheveux humains",
+      "en": "Human hair Body Wave lace front wig"
+    },
     "description": {
       "fr": "Perruque en cheveux humains, ondulation Body Wave, dentelle HD transparente pour une ligne de cheveux naturelle. Se lisse, se boucle et se colore.",
       "en": "Human hair wig with a Body Wave pattern and transparent HD lace for a natural hairline. Can be straightened, curled and coloured."
@@ -103,7 +133,10 @@
     "slug": "perruque-bandeau-bouclee-sans-colle",
     "categorie": "perruques",
     "ref_achat": "M5-2",
-    "nom": { "fr": "Perruque bandeau bouclée sans colle", "en": "Glueless curly headband wig" },
+    "nom": {
+      "fr": "Perruque bandeau bouclée sans colle",
+      "en": "Glueless curly headband wig"
+    },
     "description": {
       "fr": "Perruque synthétique bouclée et volumineuse (densité 200 %), avec bandeau : se pose en une minute, sans colle ni dentelle.",
       "en": "Full, curly synthetic wig (200% density) with a headband: on in a minute, no glue or lace."
@@ -113,10 +146,455 @@
     "slug": "tissage-cheveux-humains-lisses",
     "categorie": "perruques",
     "ref_achat": "M6-3",
-    "nom": { "fr": "Tissage en cheveux humains lisses", "en": "Straight human hair bundle" },
+    "nom": {
+      "fr": "Tissage en cheveux humains lisses",
+      "en": "Straight human hair bundle"
+    },
     "description": {
       "fr": "Mèche de tissage en cheveux humains vierges, lisses, cuticules alignées pour limiter les nœuds. Vendue à la pièce ; plusieurs longueurs.",
       "en": "Straight virgin human hair weave bundle with aligned cuticles to reduce tangling. Sold per bundle; several lengths."
+    }
+  },
+  {
+    "slug": "lotion-corporelle-hydratante-karite-cacao",
+    "categorie": "corps",
+    "ref_achat": "B7-02",
+    "nom": {
+      "fr": "Lotion corporelle hydratante 24 h au karité et au cacao",
+      "en": "24-hour moisturizing body lotion with shea and cocoa butter"
+    },
+    "description": {
+      "fr": "Lotion pour peaux sèches au beurre de karité, beurre de cacao, huiles de jojoba, d'argan, d'amande douce et d'avocat et vitamine E. Plusieurs parfums.",
+      "en": "Lotion for dry skin with shea butter, cocoa butter, jojoba, argan, sweet almond and avocado oils and vitamin E. Several scents."
+    }
+  },
+  {
+    "slug": "huile-de-coco-vierge-pressee-a-froid",
+    "categorie": "cheveux",
+    "ref_achat": "B8-10",
+    "nom": {
+      "fr": "Huile de coco vierge pressée à froid",
+      "en": "Cold-pressed virgin coconut oil"
+    },
+    "description": {
+      "fr": "Huile de coco extra vierge, 100 % pure et non raffinée, pour nourrir les cheveux, hydrater la peau et masser le corps. Flacon de 500 ml.",
+      "en": "100% pure, unrefined extra virgin coconut oil to nourish hair, moisturize skin and for body massage. 500 ml bottle."
+    }
+  },
+  {
+    "slug": "creme-defrisante-sans-soude-huile-olive",
+    "categorie": "cheveux",
+    "ref_achat": "B9-09",
+    "nom": {
+      "fr": "Crème défrisante sans soude à l'huile d'olive",
+      "en": "No-lye relaxer cream with olive oil"
+    },
+    "description": {
+      "fr": "Crème lissante sans soude (no-lye) enrichie d'huile d'olive, pour tous types de cheveux. Pot de 300 g. Produit chimique : faire un test de sensibilité et suivre le mode d'emploi.",
+      "en": "No-lye straightening cream enriched with olive oil, for all hair types. 300 g jar. Chemical product: do a sensitivity test and follow the directions."
+    }
+  },
+  {
+    "slug": "shampoing-huile-de-romarin-pousse",
+    "categorie": "cheveux",
+    "ref_achat": "B10-03",
+    "nom": {
+      "fr": "Shampoing à l'huile de romarin",
+      "en": "Rosemary oil shampoo"
+    },
+    "description": {
+      "fr": "Shampoing à l'huile de romarin, à la kératine, au karité et à la menthe poivrée, pour cheveux bouclés et crépus. Après-shampoing et masque assortis. Flacon de 470 g.",
+      "en": "Shampoo with rosemary oil, keratin, shea butter and peppermint for curly and coily hair. Matching conditioner and mask. 470 g bottle."
+    }
+  },
+  {
+    "slug": "pommade-coiffante-effet-argile-mat",
+    "categorie": "cheveux",
+    "ref_achat": "B11-05",
+    "nom": {
+      "fr": "Pommade coiffante tenue forte, fini mat",
+      "en": "Strong-hold matte styling pomade"
+    },
+    "description": {
+      "fr": "Cire coiffante à l'argile, tenue ferme et fini mat, non grasse et sans résidu. Pour tous types de cheveux. Pot de 100 ml.",
+      "en": "Clay styling wax with firm hold and matte finish, non-greasy with no flaking. For all hair types. 100 ml jar."
+    }
+  },
+  {
+    "slug": "rouge-a-levres-liquide-mat-velours",
+    "categorie": "maquillage",
+    "ref_achat": "B12-07",
+    "nom": {
+      "fr": "Rouge à lèvres liquide mat velours",
+      "en": "Velvet matte liquid lipstick"
+    },
+    "description": {
+      "fr": "Rouge à lèvres liquide au fini mat velours, longue tenue et résistant à l'eau, en plusieurs teintes intenses.",
+      "en": "Liquid lipstick with a velvet matte finish, long-wearing and water-resistant, in several rich shades."
+    }
+  },
+  {
+    "slug": "fausses-locs-crochet-souples",
+    "categorie": "perruques",
+    "ref_achat": "M7-02",
+    "nom": {
+      "fr": "Fausses locs souples au crochet",
+      "en": "Soft crochet faux locs"
+    },
+    "description": {
+      "fr": "Locs synthétiques souples et ondulées, posées au crochet pour un style faux locs naturel. Longueurs 18, 24 et 36 pouces, plusieurs couleurs.",
+      "en": "Soft, wavy synthetic locs installed with a crochet hook for a natural faux locs look. 18, 24 and 36 inch lengths, several colours."
+    }
+  },
+  {
+    "slug": "closure-frontal-dentelle-hd-cheveux-humains",
+    "categorie": "perruques",
+    "ref_achat": "M8-03",
+    "nom": {
+      "fr": "Closure et frontal en dentelle HD, cheveux humains",
+      "en": "HD lace closure and frontal, human hair"
+    },
+    "description": {
+      "fr": "Closure et frontal en cheveux humains vierges, dentelle HD transparente : 4x4, 5x5, 13x4 et 13x6. Lisses, ondulés ou bouclés.",
+      "en": "Virgin human hair closure and frontal with transparent HD lace: 4x4, 5x5, 13x4 and 13x6. Straight, wavy or curly."
+    }
+  },
+  {
+    "slug": "colle-a-perruque-impermeable",
+    "categorie": "perruques",
+    "ref_achat": "M9-03",
+    "nom": {
+      "fr": "Colle pour perruque, tenue forte imperméable",
+      "en": "Strong-hold waterproof wig glue"
+    },
+    "description": {
+      "fr": "Adhésif pour perruques en dentelle : tenue forte, résiste à l'eau et à la transpiration, sèche invisible. Flacon de 38 g.",
+      "en": "Lace wig adhesive: strong hold, water- and sweat-resistant, dries invisible. 38 g bottle."
+    }
+  },
+  {
+    "slug": "meches-ombrees-pre-etirees-26-po",
+    "categorie": "perruques",
+    "ref_achat": "M10-09",
+    "nom": {
+      "fr": "Mèches à tresser ombrées pré-étirées 26 po",
+      "en": "Pre-stretched ombré braiding hair 26 in"
+    },
+    "description": {
+      "fr": "Mèches synthétiques pré-étirées, texture yaki, en couleurs ombrées (deux tons) et unies. 26 pouces, paquet 3X.",
+      "en": "Pre-stretched synthetic braiding hair with a yaki texture in ombré (two-tone) and solid colours. 26 inches, 3X pack."
+    }
+  },
+  {
+    "slug": "meches-boucles-francaises-french-curl",
+    "categorie": "perruques",
+    "ref_achat": "M11-02",
+    "nom": {
+      "fr": "Mèches boucles françaises (French curl) 24 po",
+      "en": "French curl braiding hair 24 in"
+    },
+    "description": {
+      "fr": "Mèches synthétiques soyeuses aux boucles en spirale, pour tresses à pointes bouclées. 24 pouces, 150 g, nombreuses couleurs.",
+      "en": "Silky synthetic hair with spiral curls for braids with curly ends. 24 inches, 150 g, many colours."
+    }
+  },
+  {
+    "slug": "cheveux-humains-vrac-tresses-boho",
+    "categorie": "perruques",
+    "ref_achat": "M12-01",
+    "nom": {
+      "fr": "Cheveux humains en vrac pour tresses boho",
+      "en": "Bulk human hair for boho braids"
+    },
+    "description": {
+      "fr": "Cheveux humains naturels sans trame, à intégrer aux tresses pour l'effet boho : water wave, deep wave ou bouclé. Environ 100 g.",
+      "en": "Natural weftless human hair to add to braids for the boho look: water wave, deep wave or curly. About 100 g."
+    }
+  },
+  {
+    "slug": "meches-marley-twist-afro",
+    "categorie": "perruques",
+    "ref_achat": "M13-05",
+    "nom": {
+      "fr": "Mèches Marley twist afro",
+      "en": "Afro Marley twist hair"
+    },
+    "description": {
+      "fr": "Mèches synthétiques à texture afro crépue pour Marley twists et tresses. 14, 18 et 24 pouces, plusieurs couleurs.",
+      "en": "Synthetic hair with a kinky afro texture for Marley twists and braids. 14, 18 and 24 inches, several colours."
+    }
+  },
+  {
+    "slug": "butterfly-locs-goddess-locs-crochet",
+    "categorie": "perruques",
+    "ref_achat": "M14-02",
+    "nom": {
+      "fr": "Butterfly locs et goddess locs au crochet",
+      "en": "Crochet butterfly and goddess locs"
+    },
+    "description": {
+      "fr": "Locs pré-bouclées à l'effet effiloché (distressed), posées au crochet. 24 pouces, plusieurs couleurs.",
+      "en": "Pre-looped distressed locs installed with a crochet hook. 24 inches, several colours."
+    }
+  },
+  {
+    "slug": "meches-box-braids-sans-noeuds-38-po",
+    "categorie": "perruques",
+    "ref_achat": "M15-01",
+    "nom": {
+      "fr": "Mèches pour box braids sans nœuds 38 po",
+      "en": "Knotless box braid hair 38 in"
+    },
+    "description": {
+      "fr": "Mèches pré-étirées pour box braids et tresses sans nœuds, sans démangeaison, fixation à l'eau chaude. 38 pouces, paquet 4X de 320 g.",
+      "en": "Pre-stretched hair for box braids and knotless braids, itch-free, hot-water set. 38 inches, 4X pack of 320 g."
+    }
+  },
+  {
+    "slug": "crochet-boucle-cheveux-humains",
+    "categorie": "perruques",
+    "ref_achat": "M16-01",
+    "nom": {
+      "fr": "Crochet bouclé en cheveux humains",
+      "en": "Curly human hair crochet"
+    },
+    "description": {
+      "fr": "Mèches en cheveux humains pré-bouclées pour tresses au crochet : water wave, deep wave ou boucles serrées. 50 mèches par paquet.",
+      "en": "Pre-curled human hair for crochet braids: water wave, deep wave or tight curls. 50 strands per pack."
+    }
+  },
+  {
+    "slug": "twists-senegalais-pre-torsades",
+    "categorie": "perruques",
+    "ref_achat": "M17-03",
+    "nom": {
+      "fr": "Twists pré-torsadés au crochet",
+      "en": "Pre-twisted crochet twists"
+    },
+    "description": {
+      "fr": "Twists synthétiques pré-torsadés, posés au crochet, légers et doux. 10 à 22 pouces, noir ou ombré.",
+      "en": "Light, soft pre-twisted synthetic twists installed with a crochet hook. 10 to 22 inches, black or ombré."
+    }
+  },
+  {
+    "slug": "dreadlocks-cheveux-humains",
+    "categorie": "perruques",
+    "ref_achat": "M18-02",
+    "nom": {
+      "fr": "Dreadlocks en cheveux humains",
+      "en": "Human hair dreadlocks"
+    },
+    "description": {
+      "fr": "Extensions de locs en cheveux humains pour allonger ou densifier des dreadlocks. 4 et 6 pouces, noir.",
+      "en": "Human hair loc extensions to lengthen or thicken dreadlocks. 4 and 6 inches, black."
+    }
+  },
+  {
+    "slug": "tissage-synthetique-ondule-20-po",
+    "categorie": "perruques",
+    "ref_achat": "M19-02",
+    "nom": {
+      "fr": "Tissage synthétique ondulé 20 po",
+      "en": "Wavy synthetic weave 20 in"
+    },
+    "description": {
+      "fr": "Tissage en fibres synthétiques haute température, ondulé, lot de 6 pièces. 20 pouces, couleurs naturelles et ombrées.",
+      "en": "Wavy weave made of high-temperature synthetic fibre, 6 pieces per pack. 20 inches, natural and ombré colours."
+    }
+  },
+  {
+    "slug": "extensions-a-clips-cheveux-humains",
+    "categorie": "perruques",
+    "ref_achat": "M20-02",
+    "nom": {
+      "fr": "Extensions à clips en cheveux humains",
+      "en": "Human hair clip-in extensions"
+    },
+    "description": {
+      "fr": "Extensions à clips en cheveux humains Remy, double épaisseur, faciles à poser et à retirer. 12 à 26 pouces, plusieurs couleurs.",
+      "en": "Double-weft Remy human hair clip-in extensions, easy to put in and take out. 12 to 26 inches, several colours."
+    }
+  },
+  {
+    "slug": "extensions-adhesives-tape-in",
+    "categorie": "perruques",
+    "ref_achat": "M21-05",
+    "nom": {
+      "fr": "Extensions adhésives (tape-in) en cheveux humains",
+      "en": "Human hair tape-in extensions"
+    },
+    "description": {
+      "fr": "Bandes adhésives invisibles en cheveux humains Remy, pose plate et discrète. 40 pièces, plusieurs couleurs et textures.",
+      "en": "Invisible Remy human hair tape-in strips for a flat, discreet install. 40 pieces, several colours and textures."
+    }
+  },
+  {
+    "slug": "extensions-keratine-i-tip-u-tip",
+    "categorie": "perruques",
+    "ref_achat": "M22-09",
+    "nom": {
+      "fr": "Extensions à la kératine (I-tip, U-tip)",
+      "en": "Keratin extensions (I-tip, U-tip)"
+    },
+    "description": {
+      "fr": "Mèches en cheveux humains vierges pré-collées à la kératine, pointes I, U ou plates, cuticules alignées. 16 à 24 pouces.",
+      "en": "Pre-bonded virgin human hair with keratin tips (I, U or flat) and aligned cuticles. 16 to 24 inches."
+    }
+  },
+  {
+    "slug": "queue-de-cheval-cordon-ondulee",
+    "categorie": "perruques",
+    "ref_achat": "M23-01",
+    "nom": {
+      "fr": "Queue de cheval à cordon",
+      "en": "Drawstring ponytail"
+    },
+    "description": {
+      "fr": "Queue de cheval synthétique résistante à la chaleur, à cordon de serrage : ondulée, bouclée ou lisse. 28 et 36 pouces.",
+      "en": "Heat-resistant synthetic drawstring ponytail: wavy, curly or straight. 28 and 36 inches."
+    }
+  },
+  {
+    "slug": "chignon-afro-puff",
+    "categorie": "perruques",
+    "ref_achat": "M24-03",
+    "nom": {
+      "fr": "Chignon afro puff",
+      "en": "Afro puff bun"
+    },
+    "description": {
+      "fr": "Chignon afro crépu à cordon de serrage et peignes, pour un afro puff volumineux en quelques secondes.",
+      "en": "Kinky afro bun with drawstring and combs for a full afro puff in seconds."
+    }
+  },
+  {
+    "slug": "perruque-sans-colle-prete-a-porter",
+    "categorie": "perruques",
+    "ref_achat": "M25-02",
+    "nom": {
+      "fr": "Perruque sans colle prête à porter",
+      "en": "Glueless wear-and-go wig"
+    },
+    "description": {
+      "fr": "Perruque en cheveux humains, sans colle, prête à porter, dentelle HD. Courte bouclée (pixie), lisse ou ondulée.",
+      "en": "Glueless wear-and-go human hair wig with HD lace. Short curly (pixie), straight or wavy."
+    }
+  },
+  {
+    "slug": "perruque-bandeau-kinky-straight",
+    "categorie": "perruques",
+    "ref_achat": "M26-09",
+    "nom": {
+      "fr": "Perruque bandeau lisse (kinky straight)",
+      "en": "Kinky straight headband wig"
+    },
+    "description": {
+      "fr": "Perruque synthétique à bandeau, texture lisse légèrement crépue, sans dentelle : se pose en une minute. Noir naturel.",
+      "en": "Synthetic headband wig with a kinky straight texture and no lace: on in a minute. Natural black."
+    }
+  },
+  {
+    "slug": "perruque-tressee-cornrows",
+    "categorie": "perruques",
+    "ref_achat": "M27-09",
+    "nom": {
+      "fr": "Perruque tressée (cornrows)",
+      "en": "Braided cornrow wig"
+    },
+    "description": {
+      "fr": "Perruque synthétique tressée sur dentelle, nattes collées et pointes ondulées. 18 pouces, noir.",
+      "en": "Synthetic lace braided wig with cornrows and wavy ends. 18 inches, black."
+    }
+  },
+  {
+    "slug": "perruque-bob-courte-cheveux-humains",
+    "categorie": "perruques",
+    "ref_achat": "M28-02",
+    "nom": {
+      "fr": "Perruque bob courte en cheveux humains",
+      "en": "Short human hair bob wig"
+    },
+    "description": {
+      "fr": "Perruque bob lisse en cheveux humains, sans colle, closure 4x4. Coupe courte et nette.",
+      "en": "Straight human hair bob wig, glueless, with a 4x4 closure. A short, sharp cut."
+    }
+  },
+  {
+    "slug": "perruque-afro-kinky-curly",
+    "categorie": "perruques",
+    "ref_achat": "M29-07",
+    "nom": {
+      "fr": "Perruque afro kinky curly",
+      "en": "Kinky curly afro wig"
+    },
+    "description": {
+      "fr": "Perruque en cheveux humains aux boucles afro serrées, cuticules alignées, sans colle et prête à porter.",
+      "en": "Human hair wig with tight afro curls, aligned cuticles, glueless and ready to wear."
+    }
+  },
+  {
+    "slug": "perruque-full-lace-13x6-body-wave",
+    "categorie": "perruques",
+    "ref_achat": "M30-04",
+    "nom": {
+      "fr": "Perruque lace frontale 13x6 Body Wave",
+      "en": "13x6 lace frontal Body Wave wig"
+    },
+    "description": {
+      "fr": "Perruque en cheveux humains, densité 180 %, dentelle HD frontale 13x6 pour une raie libre et une ligne naturelle.",
+      "en": "Human hair wig, 180% density, 13x6 HD lace frontal for a free part and a natural hairline."
+    }
+  },
+  {
+    "slug": "perruque-bob-blonde-613",
+    "categorie": "perruques",
+    "ref_achat": "M31-03",
+    "nom": {
+      "fr": "Perruque bob blonde 613",
+      "en": "Blonde 613 bob wig"
+    },
+    "description": {
+      "fr": "Perruque bob en cheveux humains blond platine 613, dentelle frontale, sans colle. Peut être teinte.",
+      "en": "Platinum blonde 613 human hair bob wig with lace frontal, glueless. Can be dyed."
+    }
+  },
+  {
+    "slug": "perruque-u-part-yaki",
+    "categorie": "perruques",
+    "ref_achat": "M32-05",
+    "nom": {
+      "fr": "Perruque U-part lisse yaki",
+      "en": "Yaki straight U-part wig"
+    },
+    "description": {
+      "fr": "Perruque U-part en cheveux humains Remy, texture yaki lisse, densité 180 % : vos cheveux se fondent dans la perruque. 8 à 40 pouces.",
+      "en": "Remy human hair U-part wig with a yaki straight texture, 180% density: blend your own hair in. 8 to 40 inches."
+    }
+  },
+  {
+    "slug": "postiche-homme-dentelle",
+    "categorie": "perruques",
+    "ref_achat": "M33-07",
+    "nom": {
+      "fr": "Postiche pour hommes en dentelle",
+      "en": "Men's lace hair system"
+    },
+    "description": {
+      "fr": "Prothèse capillaire en cheveux humains sur dentelle suisse, 8 x 10 pouces, pour un rendu naturel. Plusieurs couleurs.",
+      "en": "Human hair system on Swiss lace, 8 x 10 inches, for a natural look. Several colours."
+    }
+  },
+  {
+    "slug": "bonnets-de-perruque-nylon",
+    "categorie": "perruques",
+    "ref_achat": "M34-01",
+    "nom": {
+      "fr": "Bonnets de perruque en nylon (lot de 2)",
+      "en": "Nylon wig caps (pack of 2)"
+    },
+    "description": {
+      "fr": "Bonnets extensibles et respirants à porter sous la perruque, pour plaquer les cheveux. Noir, café, beige ou couleur peau.",
+      "en": "Stretchy, breathable caps to wear under a wig and keep hair flat. Black, coffee, beige or skin tone."
     }
   }
 ]

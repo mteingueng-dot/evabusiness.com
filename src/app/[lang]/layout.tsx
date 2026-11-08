@@ -27,8 +27,17 @@ export async function generateMetadata({
   if (!estLangue(lang)) return {};
   const t = dictionnaire(lang);
   return {
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://evabusiness.com"),
     title: { default: `${MARQUE} — ${t.accroche}`, template: `%s | ${MARQUE}` },
     description: t.hero.texte,
+    alternates: { languages: { fr: "/fr", en: "/en" } },
+    openGraph: {
+      type: "website",
+      siteName: MARQUE,
+      locale: lang === "fr" ? "fr_CA" : "en_CA",
+      title: `${MARQUE} — ${t.accroche}`,
+      description: t.hero.texte,
+    },
   };
 }
 
@@ -46,7 +55,6 @@ export default async function Gabarit({
     <html lang={lang} className={polices}>
       <body>
         <PanierFournisseur>
-          <p className="annonce">{t.annonce}</p>
           <Entete langue={lang} t={t} />
           <main>{children}</main>
           <footer className="pied">

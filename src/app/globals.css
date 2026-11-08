@@ -220,7 +220,6 @@ a { color: inherit; }
 }
 
 /* Bandeau d'annonce (tous les designs) */
-.annonce { background: var(--bouton); color: var(--bouton-texte); text-align: center; font-size: 0.8rem; padding: 7px 16px; letter-spacing: 0.02em; }
 
 /* Photos de l'accueil (design Clair) */
 .hero-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
@@ -306,3 +305,9 @@ h3 { font-size: 0.98rem; }
 @media (max-width: 480px) {
   .pied-colonnes { grid-template-columns: 1fr; }
 }
+
+/* Page introuvable (404) */
+.introuvable { text-align: center; max-width: 560px; }
+.introuvable p { color: var(--texte-doux); }
+.introuvable-liens { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 22px; }
+.bouton-secondaire { background: transparent; color: var(--accent); border: 1px solid var(--accent); }

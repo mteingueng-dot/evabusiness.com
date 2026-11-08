@@ -5,7 +5,7 @@ import { LANGUES, dictionnaire, estLangue } from "@/lib/i18n";
 import { GROUPES, RUBRIQUES, rubriqueParSlug, rubriquesDuGroupe } from "@/lib/rubriques";
 
 /** Pages d'information : /fr/faq, /en/livraison-retours… (textes dans src/lib/rubriques.ts). */
-export const dynamicParams = false;
+// Rubrique inconnue : notFound() plus bas affiche la page 404 du site (not-found.tsx).
 
 export function generateStaticParams() {
   return LANGUES.flatMap((lang) => RUBRIQUES.map((r) => ({ lang, rubrique: r.slug })));

@@ -32,7 +32,6 @@ const fr = {
     texte: "Type de perruque, nombre de paquets, codes de couleur, entretien : nos guides vous aident à bien choisir.",
   },
   accroche: "Beauté, cheveux et perruques",
-  annonce: "Livraison gratuite au Canada dès 75 $ · Paiement sécurisé",
   hero: {
     titre: "Révélez votre beauté naturelle",
     texte:
@@ -109,7 +108,6 @@ const en: Dictionnaire = {
     texte: "Wig type, number of packs, colour codes, care: our guides help you choose well.",
   },
   accroche: "Beauty, hair care and wigs",
-  annonce: "Free shipping in Canada from $75 · Secure payment",
   hero: {
     titre: "Reveal your natural beauty",
     texte:
